@@ -1,0 +1,65 @@
+git init
+
+then creating 3 files
+-touch 1stFile.txt
+-touch 2ndFile.txt
+-touch 3rdFile.txt
+
+then editing them
+-vim 1stFile.txt  then copy and paste the book
+-vim 2ndFile.txt then copy and paste the book
+-vim 3rdFIle.txt then copy and paste the book
+
+then creating thins file
+-touch AllMyCommands
+
+then add all files
+-git add .
+
+then delete the 2nd file
+-git rm 2ndFile.txt
+
+then restore it
+-git commit -m "delete"
+-git log --diff-filter=D --summary   
+then check for the name of the commit let it be *2222*
+then revert the commit
+-git checkout 2222~1 2ndFile.txt
+
+then commit the changes
+git commit -m "name if the commit"
+
+then pushing these changes 
+-git push 
+
+then creating README
+-touch README.md
+
+then edit it 
+-vim README.md
+and used # to control the size of the text
+
+then create new branch
+-git branch ReadMe
+
+then move to this branch
+-git checkout ReadMe
+
+then add README.md to this branch
+-git add README.md
+
+then make a commit with these changes
+-git commit -m "commit name"
+
+then move back to the master branch
+-git chekout master
+
+then merge them
+-git merge ReadMe
+
+then pushing all data
+-git push
+
+then showing the new branch 
+-git checkout ReadMe
+-git push origin ReadMe
